@@ -34,14 +34,7 @@ public class LivingThing {
             dead = true;
             System.out.printf("%sは倒れた。\n",name);
         }
-//        if( (hitPoint <0) && (name.equals("勇者"))){
-//            dead = true;
-//            System.out.printf("%sは道半ばで力尽きてしまった。\n", name);
-//        }
-//        if((hitPoint<0)&&(name.equals("スライム"))){
-//            dead = true;
-//            System.out.printf("モンスター%sは倒れた。\n", name);
-//        }
+
     }
 
     public void setName(String  name){

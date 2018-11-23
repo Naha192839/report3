@@ -14,13 +14,11 @@ class EnemyTest {
         Enemy enemy = new Enemy("テストスライム", 6, 3);
         enemy.setDead(true);
         enemy.attack(hero);
-//        for (int i = 0; i < 10; i++) {
-//            if (hero.getHitPoint() > 0) {
-//                hero.wounded(0);
-//            } else {
-//                enemy.attack(hero);//乱数で0ダメージとなることもあるため、複数回実行してみる。
-//            }
-//        }
+       for (int i = 0; i < 10; i++) {
+           if (enemy.getDead()==false) {
+                enemy.attack(hero);//乱数で0ダメージとなることもあるため、複数回実行してみる。
+        }
         assertEquals(heroHP,hero.getHitPoint());
+       }
     }
 }
